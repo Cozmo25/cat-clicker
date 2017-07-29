@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Clicker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h2 id="greeting" class="greeting">Pick A Cat Then Click It!</h2>
+    <h3 id="catname"></h3>
+    <div id="counter">
+        <p>No. of Clicks: <span id="count">0</span></p>
+    </div>
+    <div class="cat-images">
+        <div id="cat-list-container" class="cat-list-container">
+            <ul id="cat-list">
+                <li><img id="cat1" src="images/cat1.jpeg" alt="Cat"></li>
+                <li><img id="cat2" src="images/cat2.jpeg" alt="Cat"></li>
+                <li><img id="cat3" src="images/cat3.jpeg" alt="Cat"></li>
+                <li><img id="cat4" src="images/cat4.jpeg" alt="Cat"></li>
+                <li><img id="cat5" src="images/cat5.jpeg" alt="Cat"></li>
+            </ul>
+        </div>
+        <div class="cat-container">
+            <img id="cat-img" src="" alt="Cat">
+        </div>
+    </div>
+    <button id="admin-btn" class="btn">Admin</button>
+    <div id="admin-area" class="admin-area">
+        <form id="admin-form" class="admin-form">
+            <label>Cat Name</label><input id="catname-input" class="input">
+            <label>Url</label><input id="caturl-input" class="input">
+            <label># of Clicks</label><input id="catclicks-input" class="input">
+        </form>
+        <button id="cancel-btn" class="btn">Cancel</button>
+        <button id="save-btn" class="btn">Save</button>
+    </div>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
